@@ -3,12 +3,12 @@ from omegaconf import DictConfig
 import os
 
 from conf.CONFIG_CHOICE import CONFIG_NAME, CONFIG_PATH
-from .datasets.dataloaders import CollectionDataLoader
-from .datasets.datasets import CollectionDatasetPreLoad
-from .evaluate import evaluate
-from .models.models_utils import get_model
-from .tasks.transformer_evaluator import SparseRetrieval
-from .utils.utils import get_dataset_name, get_initialize_config
+from splade.datasets.dataloaders import CollectionDataLoader
+from splade.datasets.datasets import CollectionDatasetPreLoad
+from splade.evaluate import evaluate
+from splade.models.models_utils import get_model
+from splade.tasks.transformer_evaluator import SparseRetrieval
+from splade.utils.utils import get_dataset_name, get_initialize_config
 
 
 @hydra.main(config_path=CONFIG_PATH, config_name=CONFIG_NAME, version_base="1.2")

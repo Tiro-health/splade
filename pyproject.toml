@@ -17,6 +17,12 @@ numba = "^0.59.1"
 h5py = "^3.11.0"
 tensorboard = "^2.16.2"
 pytrec-eval = "^0.5"
+matplotlib = "^3.8.4"
+seaborn = "^0.13.2"
+tensorflow = "^2.16.1"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
 
 [tool.pyright]
 venvPath = "."

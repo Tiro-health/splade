@@ -101,6 +101,9 @@ def train(exp_dict: DictConfig):
     if exp_dict["data"].get("type", "") == "triplets":
         data_train = PairsDatasetPreLoad(data_dir=exp_dict["data"]["TRAIN_DATA_DIR"])
         train_mode = "triplets"
+    elif exp_dict["data"].get("type", "") == "synonyms":
+        data_train = DistilPairsDatasetPreLoad(data_dir=exp_dict["data"]["TRAIN_DATA_DIR"])
+        train_mode = "synonyms"
     elif exp_dict["data"].get("type", "") == "triplets_with_distil":
         data_train = DistilPairsDatasetPreLoad(data_dir=exp_dict["data"]["TRAIN_DATA_DIR"])
         train_mode = "triplets_with_distil"

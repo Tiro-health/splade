@@ -19,7 +19,7 @@ elif "SPLADE_CONFIG_FULLPATH" in os.environ.keys():
     CONFIG_FULLPATH = os.environ["SPLADE_CONFIG_FULLPATH"]
     CONFIG_PATH, CONFIG_NAME = os.path.split(CONFIG_FULLPATH)
 else:
-    CONFIG_NAME = "config_default"
+    CONFIG_NAME = "config_synonyms"
 
 if ".yaml" in CONFIG_NAME:
     CONFIG_NAME = CONFIG_NAME.split(".yaml")[0]

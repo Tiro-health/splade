@@ -1,8 +1,9 @@
+
 # FILES
 defaults:  # (these specify which config FILES to use)
   ############## TRAIN ###################################
-  - train/config: splade_toy
-  - train/data: toy
+  - train/config: splade_synonyms
+  - train/data: synonyms
   - train/model: splade
   ############## INDEX ###################################
   - index: toy
